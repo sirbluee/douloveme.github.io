@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: linear-gradient(#EEC0C6, #7EE8FA);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+    .container {
+        background: linear-gradient(#7EE8FA, #EEC0C6);        
+        padding: 1rem;
+        border-radius: 10px;
+        width: 400px;
+    }
+    .btn {
+        padding: 2rem, 4rem;
+        border: none;
+        outline: none;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 500px;
+        
+    }
+    .btnPrimary {
+        background-color: purple;
+        color: white;
+        width: 70px;
+        height: 30px;
+    }
+    .btnSecondary {
+        background-color: rgb(255, 111, 135);
+        height: 30px;
+        width: 40px;
+
+    }
+    .moving:hover {
+        margin-left: 70px;
+    }
+</style>
+<body>
+    <section class="container">
+        <h2 class="text">Do you love me ?❤️</h2>
+        <button class="btn btnPrimary">Yes</button>
+        <button class="btn btnSecondary moving">No</button>
+    </section>
+
+    <script>
+        const btnAgree = document.querySelector(".btnPrimary");
+        const btnDisagree = document.querySelector(".btnSecondary");
+        const text = document.querySelector(".text");
+
+        btnAgree.addEventListener("click", () =>{
+            text.innerText = "Love u too!💕";
+        } )
+        btnDisagree.addEventListener("mouseover", () =>{
+
+        })
+    </script>
+</body>
+</html>
